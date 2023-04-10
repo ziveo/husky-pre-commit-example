@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "prettier --check .",
-    "format": "prettier --write .",
-    "prepare": "husky install"
+    "format": "prettier --write '**/*.js' . && git add -A .",
+    "postinstall": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -15,19 +15,5 @@
   "devDependencies": {
     "husky": "^8.0.0",
     "prettier": "^2.8.7"
-  },
-  "husky": {
-    "hooks": {
-      "applypatch-msg": "echo '[Husky] applypatch-msg'",
-      "pre-applypatch": "echo '[Husky] pre-applypatch'",
-      "post-applypatch": "echo '[Husky] post-applypatch'",
-      "pre-commit": "prettier --write . && git add -A ."
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add"
-    ]
   }
 }
