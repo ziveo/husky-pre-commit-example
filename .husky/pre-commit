@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-GREEN='\033[0;32m'
-NC='\033[0m' # No Color
+GREEN='\033[0;32m'  # Green Color
+NC='\033[0m'        # No Color
 
 echo "${GREEN}HUSKY pre-commit hook${NC}"
 npm run husky:pre-commit:prettier:format

@@ -1,4 +1,7 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo 'HUSKY pre-push hook'
+GREEN='\033[0;32m'  # Green Color
+NC='\033[0m'        # No Color
+
+echo "${GREEN}HUSKY pre-push hook${NC}"
