@@ -15,5 +15,19 @@
   "devDependencies": {
     "husky": "^8.0.0",
     "prettier": "^2.8.7"
+  },
+  "husky": {
+    "hooks": {
+      "applypatch-msg": "echo '[Husky] applypatch-msg'",
+      "pre-applypatch": "echo '[Husky] pre-applypatch'",
+      "post-applypatch": "echo '[Husky] post-applypatch'",
+      "pre-commit": "prettier --write . && git add -A ."
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
