@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-echo 'BASH ECHO pre-push hook'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+echo "I ${RED}love${NC} Stack Overflow"
+
+echo 'husky pre-commit hook'
 npm run husky:pre-commit:prettier:format
