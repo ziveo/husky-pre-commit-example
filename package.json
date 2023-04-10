@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "prettier --check .",
-    "husky:pre-commit:prettier:format": "prettier --cache --write 'src/**/*.js' && git add -A .",
+    "husky:pre-commit:prettier:format": "prettier --cache --loglevel warn --write 'src/**/*.js' && git add -A .",
     "prepare": "husky install"
   },
   "keywords": [],
