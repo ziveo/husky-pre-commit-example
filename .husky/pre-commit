@@ -4,5 +4,7 @@
 GREEN='\033[0;32m'  # Green Color
 NC='\033[0m'        # No Color
 
-echo "${GREEN}HUSKY pre-commit hook${NC}"
+echo "${GREEN}===========================${NC}"
+echo "${GREEN}== HUSKY pre-commit hook ==${NC}"
+echo "${GREEN}===========================${NC}"
 npm run husky:pre-commit:prettier:format
