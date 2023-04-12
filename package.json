@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "prettier --check .",
-    "husky:pre-commit:prettier:format": "prettier --cache --loglevel warn --write 'src/**/*.js' && git add -A .",
+    "husky:pre-commit:prettier:format": "prettier --cache --loglevel warn --write 'src/**/*.{js,scss,css}'",
+    "prettier:format": "prettier --cache --write 'src/**/*.{js,css,scss}'",
     "prepare": "husky install"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "husky": "^8.0.0",
-    "prettier": "^2.8.7"
+    "prettier": "^2.8.7",
+    "sass": "^1.61.0"
   }
 }
