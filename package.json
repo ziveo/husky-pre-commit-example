@@ -14,8 +14,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "husky": "^8.0.0",
+    "husky": "^8.0.3",
     "prettier": "^2.8.7",
-    "sass": "^1.61.0"
+    "sass": "^1.62.0"
   }
 }
